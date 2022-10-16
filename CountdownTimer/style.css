@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+body{
+    background: url(./image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+a{
+    text-decoration: none;
+    color: #282a40;
+    font-weight: 500;
+}
+
+.container{
+    display: flex;
+    row-gap: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.box-back{
+    position: relative;
+    background: #315eb1;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 40px;
+    overflow: hidden;
+    background: #282a40;
+}
+
+.container header{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+}
+
+.container header span{
+    display: block;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.container p{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    max-width: 550px;
+    text-align: center;
+    user-select: text;
+    background-color:transparent;
+}
+
+.container .time-content{
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.time-content .time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time .number,
+.time .text{
+    font-weight: 500;
+    color: #fff;
+}
+
+.time .number{
+    font-size: 40px;
+}
+
+.time .text{
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width:575px){/* XS */
+    .box-back{
+        width: 100%;
+    }
+    .box{
+        padding: 5px 20px;
+    }
+    .container header{
+        font-size: 30px;
+    }
+    .container header span{
+        font-size: 20px;
+    }
+
+    .container .time-content{
+        column-gap: 5px;
+    }
+    .time .number{
+        font-size: 20px;
+    }
+    .time .text{
+        font-size: 12px;
+    }
+}
